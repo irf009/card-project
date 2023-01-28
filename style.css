@@ -27,6 +27,7 @@ body {
 	padding: 10px 15px;
 	letter-spacing: 2px;
 	border-radius: 10px;
+	cursor: pointer;
 }
 .btn-pink {
 	background-color: #ffe8f1;
