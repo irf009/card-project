@@ -50,3 +50,55 @@ p {
 .logo-blue {
 	background-color: #68a3ff;
 }
+.btn-pink:hover {
+	background-color: #ff69a6;
+	color: #ffe8f1;
+}
+.btn-blue:hover {
+	background-color: #68a3ff;
+	color: #ecf4ff;
+}
+.pink-text {
+	display: inline-block;
+	position: relative;
+}
+
+.pink-text:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #ff69a6;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+
+.pink-text:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+.blue-text {
+	display: inline-block;
+	position: relative;
+}
+
+.blue-text:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #68a3ff;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+
+.blue-text:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
